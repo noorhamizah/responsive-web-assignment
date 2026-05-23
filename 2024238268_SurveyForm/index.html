@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One Direction Fan Survey</title>
+</head>
+<body>
+  <h1 id="title">One Direction Fan Survey</h1>
+  <p id="description">Thank you for taking the time to share your love for 1D!</p>
+
+  <form id="survey-form">
+    <div>
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
+    </div>
+
+    <div>
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your Email" required />
+    </div>
+
+    <div>
+      <label id="number-label" for="number">Age (optional)</label>
+      <input id="number" type="number" min="10" max="99" placeholder="Age" />
+    </div>
+
+    <div>
+      <p>Which member is your favourite?</p>
+      <select id="dropdown">
+        <option disabled selected value>Select a member</option>
+       <option value="harry">Harry Styles</option>
+                <option value="niall">Niall Horan</option>
+                <option value="liam">Liam Payne</option>
+                <option value="louis">Louis Tomlinson</option>
+                <option value="zayn">Zayn Malik</option></option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div>
+      <p>Would you recommend 1D songs to a friend?</p>
+      <label><input name="recommend" value="definitely" type="radio" checked /> Definitely</label>
+      <label><input name="recommend" value="maybe" type="radio" /> Maybe</label>
+      <label><input name="recommend" value="not-sure" type="radio" /> Not sure</label>
+    </div>
+
+    <div>
+      <p>What is your favorite album?</p>
+      <select id="most-favorite">
+        <option disabled selected value>Select an option</option>
+        <option value="up-all-night">Up All Night</option>
+                <option value="take-me-home">Take Me Home</option>
+                <option value="midnight-memories">Midnight Memories</option>
+                <option value="four">FOUR</option>
+                <option value="made-in-am">Made in the A.M.</option>
+      </select>
+    </div>
+
+    <div>
+      <p>What would you like to see in a reunion? (Check all that apply)</p>
+     <label class="checkbox-group"><input value="world-tour" type="checkbox"> New World Tour</label>
+            <label class="checkbox-group"><input value="new-album" type="checkbox"> New Studio Album</label>
+            <label class="checkbox-group"><input value="documentary" type="checkbox"> Behind-the-scenes Movie</label>
+            <label class="checkbox-group"><input value="zayn-returns" type="checkbox"> Zayn's Return</label>
+            <label class="checkbox-group"><input value="interviews" type="checkbox"> Group Interviews</label>
+        </label>
+    </div>
+
+    <div>
+      <p>Any messages for the boys?</p>
+      <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
